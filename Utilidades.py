@@ -20,6 +20,6 @@ precioeth = resultadoeth.text
 inflacion = requests.get("https://btc.com/eth") #https://whattomine.com/coins/1-btc-sha-256
 soup3 = BeautifulSoup(inflacion.content, "html.parser")
 
-inflacionresult = soup3.find("span", {"class":"font-size-sm font-size-xs negative-text"}) #text-decoration-none text-reset
+inflacionresult = soup3.find("span", {"class":"font-size-sm font-size-xs positive-text"}) #text-decoration-none text-reset
 inflaciontotal = inflacionresult.text
 
